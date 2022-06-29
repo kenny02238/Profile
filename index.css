@@ -18,7 +18,7 @@
 .portfolio{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/casey-horner-D4TooCIEyF4-unsplash.jpg);
 }
-#warpper{
+#wrapper{
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -26,14 +26,14 @@
     height: 100vh;
     
 }
-.flex-warpper{
+.flex-wrapper{
     display: flex;
     flex: 1;
     flex-direction: column;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: 0.5s;
+    transition: 1s;
     z-index: 200;
     overflow: hidden;
 }
@@ -65,37 +65,38 @@
     font-size: 2vh;
     cursor: pointer;
     opacity: 0;
-    transition: 3s;
+    transition: 1.5s;
     z-index: 50;
     
 }
-@media(any-hover:hover){
-    .flex-warpper:hover .flex-content{
+/* @media(any-hover:hover){
+    .flex-wrapper:hover .flex-content{
         opacity: 1;
     }
-    .flex-warpper:hover .flex-title{
+    .flex-wrapper:hover .flex-title{
         transform: rotate(0deg);
     }
-    .flex-warpper:hover{
+    .flex-wrapper:hover{
         flex-grow: 3;
     }
-};
-/* .flex-warpper:hover .flex-content{
+}; */
+.flex-wrapper:hover .flex-content{
     opacity: 1;
+    transition: 3s;
 }
-.flex-warpper:hover .flex-title{
+.flex-wrapper:hover .flex-title{
     transform: rotate(0deg);
 }
-.flex-warpper:hover{
+.flex-wrapper:hover{
     flex-grow: 3;
-} */
+}
 
 @media screen and (max-width: 900px) {
     .flex-title{
         transform: rotate(0deg);
     }
     
-    #warpper{
+    #wrapper{
         flex-direction: column;
     }
     
